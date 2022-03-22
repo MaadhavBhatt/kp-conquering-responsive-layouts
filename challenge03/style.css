@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --clr-dark: #23424a;
+  --clr-light: #dee3e4;
+  --clr-blue: #38cfd9;
+  --clr-black: #072a2d;
+  font-size: 10px;
+}
+
+* + *:not(body) {
+  margin-top: 2rem;
+}
+
+.hero {
+  background: var(--clr-dark);
+  padding: 10em 0;
+}
+
+.hero__content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero__text-content {
+  width: 60%;
+  max-width: 1000px;
+}
+
+.hero__heading {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.hero__text {
+  color: var(--clr-light);
+  font-size: 2rem;
+}
+
+.hero__btn {
+  display: inline-block;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+
+  font-size: 1.75rem;
+  font-weight: 900;
+
+  color: var(--clr-black);
+  background: var(--clr-blue);
+
+  margin-top: 4rem;
+  padding: 1em 2em;
+
+  border-radius: 2em;
+  transition: opacity 250ms ease-in-out;
+}
+
+.hero__btn:hover,
+.hero__btn:focus {
+  opacity: 0.9;
+}

@@ -106,6 +106,12 @@ p {
   color: #fff;
 }
 
+@media (max-width: 1400px) {
+  .container {
+    width: 80%;
+  }
+}
+
 @media (max-width: 940px) {
   .flex {
     flex-direction: column;
@@ -116,11 +122,5 @@ p {
   .img-container-prior + *,
   * + .img-container-follow {
     margin-top: 2rem;
-  }
-}
-
-@media (max-width: 1400px) {
-  .container {
-    width: 80%;
   }
 }

@@ -66,6 +66,7 @@ header {
 
 .nav {
   width: 100%;
+  margin-top: 1rem;
 }
 
 .nav-toggle {
@@ -85,6 +86,40 @@ header {
 
 .nav-toggle:focus,
 .nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav__list--primary {
+  margin-bottom: 2em;
+}
+
+.nav__item {
+  margin-top: 1em;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__link--button {
+  background: #fff;
+  color: #136c72;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+}
+
+.nav__link:hover,
+.nav__link:focus {
   opacity: 0.75;
 }
 
@@ -167,9 +202,24 @@ header {
   }
 
   .nav {
+    position: relative;
     visibility: visible;
-    display: flex;
+    margin-top: 0;
     height: auto;
+
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav__list {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav__item {
+    margin: 0;
   }
 
   .row {

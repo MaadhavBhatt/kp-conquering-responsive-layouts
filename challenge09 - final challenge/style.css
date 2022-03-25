@@ -162,3 +162,19 @@ footer {
 footer * + div {
   margin-top: 1em;
 }
+
+/* Sidebar */
+.sidebar,
+.sidebar__item + .sidebar__item {
+  margin-top: 4rem;
+}
+
+.sidebar__item {
+  background-color: var(--clr-dark-grey);
+  color: var(--clr-white);
+
+  font-size: 1.8rem;
+  text-align: center;
+
+  padding: 1.5em 1em;
+}

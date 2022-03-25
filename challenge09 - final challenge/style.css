@@ -175,6 +175,16 @@ footer * + div {
 }
 
 /* Header */
+.hamburger-container {
+  position: relative;
+  display: inline-block;
+  margin: 2em 2em 2em 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 2em;
+  background-color: var(--clr-white);
+}
+
 .nav__item {
   text-transform: uppercase;
   text-align: center;

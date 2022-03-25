@@ -44,11 +44,6 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -124,6 +119,7 @@ footer li {
 
 /* Layout */
 img {
+  max-width: 100%;
   margin: 2em 0;
 }
 
